@@ -1,4 +1,8 @@
 def main() -> None:
+    """a doctest in a docstring
+    >>> main()
+    Hello, World!
+    """
     print("Hello, World!")
 
 
