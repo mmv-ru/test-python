@@ -1,10 +1,10 @@
-def main() -> None:
+def main(who: str) -> None:
     """a doctest in a docstring
-    >>> main()
+    >>> main('World')
     Hello, World!
     """
-    print("Hello, World!")
+    print(f"Hello, {who}!")
 
 
 if __name__ == "__main__":
-    main()
+    main("World")
