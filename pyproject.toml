@@ -48,7 +48,7 @@ mkdocstrings = {extras = ["python"], version = "^0.19.1"}
 pre-commit = "^2"
 
 [tool.pytest.ini_options]
-addopts = "--doctest-modules"
+addopts = ["--doctest-modules", "--cov=."]
 minversion = "6.0"
 testpaths = ["main.py", "tests"]
 
