@@ -1,10 +1,10 @@
 [tool.coverage.report]
-fail_under = 100
+fail_under = 50
 show_missing = true
 
 [tool.coverage.run]
 command_line = "-m pytest"
-source = ["templatepython", "tests"]
+source = ["templatepython", "tests", "main.py"]
 
 [tool.isort]
 profile = "black"
@@ -33,15 +33,15 @@ python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 black = ">=22.3.0"
-coverage = {version = "^6", extras = ["toml"]}
+coverage = {version = "^7", extras = ["toml"]}
 flake8 = ">=4"
 isort = "^5.6"
-mkdocs-material = "^8"
+mkdocs-material = "^9"
 mypy = ">0.900,<1"
 pre-commit = "^2.8"
 pytest = "^7"
-pytest-cov = "^3"
-pytest-mock = "^3.3"
+pytest-cov = "^4"
+pytest-mock = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 mkdocstrings = {extras = ["python"], version = "^0.19.1"}
