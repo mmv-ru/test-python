@@ -11,7 +11,8 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 nav:
-  - "index.md"
+  - Main Doc: index.md
+  - Reference: reference.md
 repo_name: br3ndonland/template-python
 repo_url: https://github.com/br3ndonland/template-python
 site_name: template-python docs
@@ -43,3 +44,5 @@ theme:
         icon: material/weather-sunny
         name: Switch to dark mode
 use_directory_urls: false
+plugins:
+  - mkdocstrings

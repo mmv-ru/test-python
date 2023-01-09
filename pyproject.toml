@@ -43,6 +43,9 @@ pytest = "^7"
 pytest-cov = "^3"
 pytest-mock = "^3.3"
 
+[tool.poetry.group.dev.dependencies]
+mkdocstrings = {extras = ["python"], version = "^0.19.1"}
+
 [tool.pytest.ini_options]
 addopts = "--doctest-modules"
 minversion = "6.0"

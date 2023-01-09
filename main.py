@@ -1,7 +1,19 @@
+"""Example project for poetry, lint, test, (pre-commit) and automatic doc generation
+Functions:
+  `main(who)` - Ptint "Hello, {who}!"
+"""
+
+
 def main(who: str) -> None:
-    """a doctest in a docstring
-    >>> main('World')
-    Hello, World!
+    """Print Hello to whatewer You want.
+
+    Examples:
+        >>> main('World')
+        Hello, World!
+
+    Args:
+        who: Who to greet.
+
     """
     print(f"Hello, {who}!")
 
