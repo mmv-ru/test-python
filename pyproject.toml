@@ -46,6 +46,7 @@ pytest-mock = "^3.10"
 [tool.poetry.group.dev.dependencies]
 mkdocstrings = {extras = ["python"], version = "^0.19.1"}
 pre-commit = "^2"
+wily = "^1"
 
 [tool.pytest.ini_options]
 addopts = ["--doctest-modules", "--cov=."]

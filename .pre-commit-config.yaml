@@ -53,12 +53,20 @@ repos:
         args: [--no-update]
       - id: poetry-export
         args: [-f, requirements.txt, --output, requirements.txt]
-#    - repo: https://github.com/adrienverge/yamllint.git
-#      rev: v1.21.0  # or higher tag
-#      hooks:
-#          - id: yamllint
-#            args: [--format, parsable, --strict]
-#    - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-#      rev: 0.2.1  # or other specific tag
-#      hooks:
-#          - id: yamlfmt
+  #    - repo: https://github.com/adrienverge/yamllint.git
+  #      rev: v1.21.0  # or higher tag
+  #      hooks:
+  #          - id: yamllint
+  #            args: [--format, parsable, --strict]
+  #    - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+  #      rev: 0.2.1  # or other specific tag
+  #      hooks:
+  #          - id: yamlfmt
+#  - repo: local
+#    hooks:
+#      - id: wily
+#        name: wily
+#        entry: wily diff
+#        verbose: true
+#        language: python
+#        additional_dependencies: [wily]
